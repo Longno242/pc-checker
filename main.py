@@ -3,7 +3,11 @@
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+if getattr(sys, "frozen", False):
+    ROOT = Path(sys._MEIPASS)
+else:
+    ROOT = Path(__file__).resolve().parent
+
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 

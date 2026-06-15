@@ -13,7 +13,17 @@ Optional:
 
 - NVIDIA driver tools (`nvidia-smi`) for extended GPU telemetry
 
-## Installation
+## Download (no Python required)
+
+Download the latest Windows build from the [Releases](https://github.com/Longno242/pc-checker/releases) page:
+
+1. Download `PC-Checker.exe`
+2. Run the file (no installation required)
+3. Select **Scan System**
+
+Windows may show SmartScreen on first run because the executable is not code-signed. Choose **More info**, then **Run anyway** if you trust the source.
+
+## Installation (from source)
 
 Clone the repository and install dependencies:
 
@@ -64,7 +74,7 @@ Install PyInstaller and run the build script:
 build.bat
 ```
 
-The executable is written to `dist\PC Checker.exe`.
+The executable is written to `dist\PC-Checker.exe`.
 
 ## Project layout
 
